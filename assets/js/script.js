@@ -41,7 +41,7 @@ const estrai = (e) => {
   e.preventDefault();
 
   // Estrae un numero da 1 a 90
-  let num = Math.floor(Math.random() * 90) + 1;
+  let num = 0;
 
   // ripesca il numero fino a quando nell'array usciti era gia presente il num estratto qui all'inizio
   do {
@@ -52,9 +52,9 @@ const estrai = (e) => {
   usciti.push(num);
   lastNum.innerText = num;
 
-  //stampa nella cronologia gli ultimi 10 numeri estratti
-  chronology.classList.add(".numero");
-  chronology.textContent = usciti;
+  //stampa nella cronologia gli ultimi 10 numeri estratti, con lo slice dico di farne uscire max 10 ,col reverse gli ultimi num estratti partono da sinistra e non da destra ed infine con il join al posto delle virgole metto il trattino
+  chronology.classList.add("ultimo");
+  chronology.textContent = usciti.slice(-10).reverse().join("-");
 
   // cerca i div creato nel js con class numero
   const numeri = document.querySelectorAll("#tabellone .numero");
