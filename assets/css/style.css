@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  color: #1b2845;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.ultimo {
+  text-align: center;
+  margin: 30px 0;
+}
+
+#ultimo-numero {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #0066cc;
+  display: block;
+}
+
+.comandi {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.comandi button {
+  padding: 12px 24px;
+  margin: 0 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.tabellone {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 5px;
+  margin: 20px 0;
+}
+
+.numero {
+  padding: 12px;
+  background: #f0f0f0;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.numero-uscito {
+  background: #0066cc;
+  color: #ffffff;
+  font-weight: bold;
+}
