@@ -39,8 +39,6 @@ function rendiTabellone() {
 
 const estrai = (e) => {
   e.preventDefault();
-
-  // Estrae un numero da 1 a 90
   let num = 0;
 
   // ripesca il numero fino a quando nell'array usciti era gia presente il num estratto qui all'inizio
@@ -67,7 +65,7 @@ const estrai = (e) => {
   });
 
   // se l'array ha gia tutti e 90 i numeri compare l'alert
-  if (usciti.length === 90) {
+  if (usciti.length >= 90) {
     alert("Hai estratto tutti i numeri!");
   }
 };
